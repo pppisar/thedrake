@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="720.0" prefWidth="720.0" styleClass="border-pane" stylesheets="@style.css" xmlns="http://javafx.com/javafx/19.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cz.cvut.fit.thedrakefx.MainMenuController">
+   <center>
+      <VBox alignment="CENTER" fillWidth="false" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView pickOnBounds="true" preserveRatio="true" styleClass="image-main-logo">
+               <image>
+                  <Image url="@../images/logo.png" />
+               </image>
+               <VBox.margin>
+                  <Insets bottom="40.0" />
+               </VBox.margin>
+            </ImageView>
+            <Button fx:id="localButton" mnemonicParsing="false" onAction="#onLocalClick" prefHeight="60.0" prefWidth="440.0" styleClass="button-main" text="MULTIPLAYER (LOCAL)">
+               <font>
+                  <Font name="Forte" size="32.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="440.0" styleClass="button-main" text="SINGLPLAYER">
+               <font>
+                  <Font name="Forte" size="32.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="440.0" styleClass="button-main" text="MULTIPLAYER (ONLINE)">
+               <font>
+                  <Font name="Forte" size="32.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="exitButton" mnemonicParsing="false" onAction="#onExitClick" prefHeight="60.0" prefWidth="440.0" styleClass="button-main" text="EXIT">
+               <font>
+                  <Font name="Forte" size="32.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
